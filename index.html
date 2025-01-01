@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Baskervville+SC&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>In-a-Flash</title>
+</head>
+<body>
+    <h1>In a Flash</h1>
+    <div id="menu">
+        <p>Test your number reading skills from 1 to 10.</p>
+        <label for="">Easy (10 sec)</label>
+        <input type="radio" name="difficulty" value="easy" id="easy">
+        <label for="">Medium (7 sec)</label>
+        <input type="radio" name="difficulty" value="medium" id="medium">
+        <label for="">Hard (4 sec)</label>
+        <input type="radio" name="difficulty" value="hard" id="hard"><br>
+        <label for="">Multi Choice</label>
+        <input type="radio" name="quiz" value="multi" id="multi">
+        <label for="">True or False</label>
+        <input type="radio" name="quiz" value="tf" id="tf">
+        <label for="">Type In</label>
+        <input type="radio" name="quiz" value="blank" id="blank"><br>
+        <button id="start">Start Quiz</button><br>
+        
+    </div>
+    <div id="multiChoice">
+        <div class="card"><p id="multiQuestion"></p></div>
+        <button id="choice1">Choice1</button>
+        <button id="choice2">Choice2</button>
+        <button id="choice3">Choice3</button>
+        <button id="choice4">Choice4</button>
+        <button id="choice5">Choice5</button>
+        <button id="choice6">Choice6</button>
+        <button id="outOfTime1" value ="outOfTime"></button>
+        <p>Time: <span id="time1">...</span></p>
+    </div>
+    <div id="trueOrFalse">
+        <div class="card"><p id="tfQuestion"></p></div>
+        <button id="true">True</button>
+        <button id="false">False</button>
+        <button id="outOfTime2" value ="outOfTime"></button>
+        <p>Time: <span id="time2">...</span></p>
+    </div>
+    <div id="fill">
+        <div class="card"><p id="fillQuestion"></p></div>
+        <label for="">Answer here: </label>
+        <input id="fillAnswer" type="text">
+        <button id="answerButton" type="submit">Answer</button>
+        <p>Time: <span id="time3">...</span></p>
+    </div>
+    <p id="copy">Practice Site By Ryan Park &copy;2024.</p>
+    <script src="script.js"></script>
+</body>
+</html>
